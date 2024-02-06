@@ -1,0 +1,70 @@
+.container {
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    position: center;
+  }
+  
+  .container > * {
+    max-width: 600px; 
+    width: 100%;
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  input[type="text"], input[type="number"] {
+    width: calc(100% - 20px); 
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #5788d7;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #587aca;
+  }
+  

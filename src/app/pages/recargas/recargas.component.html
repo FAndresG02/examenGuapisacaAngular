@@ -1,0 +1,32 @@
+<div class="container">
+    <h1>Seleccione su Operadora</h1>
+<table>
+
+  <tr>
+    <th>Codigo</th>
+    <th>Nombre</th>
+  </tr>
+
+  <tr *ngFor="let ope of operadoras | async">
+    <td> <a (click)="operadoraID(ope.codigo)">{{ope.codigo}}</a> </td>
+    <td> {{ope.nombre}} </td>
+  </tr>
+
+</table>
+
+<form (ngSubmit)="hacerRecarga()">
+    <table>
+      <tr>
+        <td>Numero de telefono</td>
+        <td><input type="text" [(ngModel)]="numeroTelefono" name="txtNumero" pattern="[0-9]+" required></td>
+      </tr>
+      <tr>
+        <td>Valor de la recarga</td>
+        <td><input type="number" [(ngModel)]="valorRecarga" name="txtTotal" required></td>
+      </tr>
+    </table>
+    <button type="submit">Enviar</button>
+  </form>
+
+</div>
+
